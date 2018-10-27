@@ -32,6 +32,8 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  let regex = /^[A-Z]$/;
+  arr.match(regex);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -42,6 +44,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  let regex = /[A-J]$/;
+  regex.test(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,6 +62,9 @@ Do not use the vertical bar (pipe) in your pattern.
 
 const matchMonth = (input) => {
   // Solution code here...
+  const checkMonth = /^[Oo]ct(ober)?$/
+  console.log(checkMonth.test(input))
+  return checkMonth.test(input)
 };
 
 /* ------------------------------------------------------------------------------------------------
